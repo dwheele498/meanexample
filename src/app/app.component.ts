@@ -7,5 +7,8 @@ import {PostCreateComponent} from './posts/post-create/post-create.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'meanstack';
+  storedPosts = [];
+  onPostAdded(post: {}): void{
+    this.storedPosts.push(post);
+  }
 }
