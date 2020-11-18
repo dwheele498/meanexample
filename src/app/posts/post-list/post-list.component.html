@@ -2,6 +2,10 @@
   <mat-expansion-panel *ngFor="let p of posts">
     <mat-expansion-panel-header>{{p.title}}</mat-expansion-panel-header>
     <p>{{p.content}}</p>
+    <mat-action-row>
+      <button color="secondary" mat-button>EDIT</button>
+      <button color="warn" mat-button>DELETE</button>
+    </mat-action-row>
   </mat-expansion-panel>
 </mat-accordion>
 <p class="mat-body-1" *ngIf="posts.length==0">No posts yet</p>
